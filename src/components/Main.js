@@ -1,9 +1,18 @@
 import React from 'react'
+import Meme from "./memedata"
 
 function Main() {
-  const handle = function(){
-    console.log("i was clicked")
+
+    function handle (){
+    const memeArray = Meme.data.memes
+    const randNum = Math.floor(Math.random()* memeArray.length)
+    const url = memeArray[randNum].url
+
+    // const {url}= memeArray[randNum]
+    console.log(url)
+    // console.log(randNum)
   }
+
   return (
     <div className='main-section'>
         <div action="" className='main-form'>
@@ -12,7 +21,6 @@ function Main() {
             <button 
             className='meme-btn' 
             onClick = {handle}
-            // onMouseEnter= {handle}
             >
               Get a new meme Image
             </button>
@@ -22,3 +30,4 @@ function Main() {
 }
 
 export default Main
+// onMouseEnter= {handle}

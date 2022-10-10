@@ -48,9 +48,9 @@ line-height: 220%;
   text-indent: 20px;
   border: 1px solid #D5D4D8;
   box-shadow: 0px 0px 3px rgb(0,0,0,0.2);
-
-
+  cursor:pointer;
 }
+
 .meme-btn{
   grid-column: 1 / -1;
   border-radius: 5px;
@@ -59,13 +59,17 @@ line-height: 220%;
   text-transform: uppercase;
   border: none;   
   font-family: 'Inter', sans-serif; 
+  cursor:pointer;
 
 }
+
 .meme-btn:hover{
   background: linear-gradient(90deg, #cd6eef 1.18%, #c25ae7 100%);
   transition: all 0.5s ease-in-out ;
   border-color: transparent;
   border: 1.8px solid #8530a3;
-
 }
 
+/* grid-template-columns:repeat(auto-fit,minmax(30rem, 1fr)); */
+/* 30rem is the minimum the container can be rendered  */
+/* while 1fr is the maximum size the box can be rendered */
