@@ -9,14 +9,15 @@ function Main() {
     const randNum = Math.floor(Math.random()* memeArray.length)
     const url = memeArray[randNum].url
     // const {url}= memeArray[randNum]
-    setMemeImage(() => {
-      if(url === 0){
-      return url + 1
-      }else{
-        return url
-      }
-    })
-  }
+
+            setMemeImage(() => {
+              if(url === 0){
+              return url + 1
+              }else{
+                return url
+              }
+            })
+          }
 
   return (
     <div className='main-section'>
@@ -30,7 +31,6 @@ function Main() {
               Get a new meme Image 🖼
             </button>
         </div>
-
         <img className='meme-img' src={memeImage} alt="" />
     </div>
   )

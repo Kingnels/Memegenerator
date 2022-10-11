@@ -31,6 +31,15 @@ font-weight: 450;
 font-size: 12px;
 line-height: 220%;
 }
+@media screen and (max-width: 400px) {
+  .header>h4{
+    display: none;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .main-section{
   margin: 2rem auto;
@@ -39,6 +48,8 @@ line-height: 220%;
   min-width: 270px;
 }
 .main-form{
+  /* flex: 0 0 auto; */
+  /* border: 1px solid #07040f; */
   display: grid;
   grid-template: 50px 50px / 1fr 1fr ;
   gap: 1rem;
@@ -49,37 +60,49 @@ line-height: 220%;
   border: 1px solid #D5D4D8;
   box-shadow: 0px 0px 3px rgb(0,0,0,0.2);
   cursor:pointer;
+  width: 100%;
+
 }
 
 .meme-btn{
   grid-column: 1 / -1;
-  border-radius: 5px;
+  border-radius: 15px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   color: white;
   text-transform: uppercase;
   border: none;   
   font-family: 'Inter', sans-serif; 
   cursor:pointer;
+  width: 100%;
+
 
 }
 
 .meme-btn:hover{
   background: linear-gradient(90deg, #cd6eef 1.18%, #c25ae7 100%);
-  transition: all 1s ease-in-out ;
+  transition: all 0.7s ease-in-out ;
   border-color: transparent;
   border:none;
+  letter-spacing: 1.2px;
 }
 .meme-img{
   width:100%;
   max-height: 500px;
   margin: 2rem 0;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 3px solid #672280;
   box-shadow: 0px 0px 6px rgb(0,0,0,0.2);
-
+}
+.meme-img:hover{
+  transform: scale(1.00901);
+  transition: all 0.4s linear ;
 
 }
 
 /* grid-template-columns:repeat(auto-fit,minmax(30rem, 1fr)); */
 /* 30rem is the minimum the container can be rendered  */
 /* while 1fr is the maximum size the box can be rendered */
+
+/* box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+-webkit-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44);
+-moz-box-shadow: 5px 5px 5px 1px rgba(120,120,120,0.44); */
