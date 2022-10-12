@@ -16,7 +16,6 @@ function Main() {
     const memeArray = allData.data.memes
     const randNum = Math.floor(Math.random()* memeArray.length) !== 0 ? Math.floor(Math.random()* memeArray.length) : Math.floor(Math.random()* memeArray.length) + 1;
     const url = memeArray[randNum].url    
-
     // const {url}= memeArray[randNum]
     
             setJoke((prevState) => {
