@@ -3,6 +3,7 @@ import Meme from "./memedata"
 
 function Main() {
     // const [memeImage, setMemeImage] = useState("https://i.imgflip.com/1ihzfe.jpg")
+
     const [joke, setJoke] = useState({
       topText:"",
       botttomText:"",
@@ -45,4 +46,3 @@ function Main() {
 }
 
 export default Main
-// onMouseEnter= {handle}
