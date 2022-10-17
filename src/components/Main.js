@@ -23,6 +23,8 @@ function Main() {
             setJoke((prevState) => {
               return {
                 ...prevState,
+                topText:"",
+                botttomText:"",
                 randomImage : url
               }
             })
@@ -53,12 +55,7 @@ function Main() {
                 <img className='meme-img' src={joke.randomImage} alt="" />
                 <h2 className='top text'>{joke.topText}</h2>
                 <h2 className='bom text'>{joke.botttomText}</h2>
-                {/* <h2 className="meme--text top">{meme.topText}</h2>
-                <h2 className="meme--text bottom">{meme.bottomText}</h2> */}
-            </div>
-
-          
-         
+            </div>     
     </div>
   )
 }
